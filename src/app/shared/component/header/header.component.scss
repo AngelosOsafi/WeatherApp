@@ -1,0 +1,26 @@
+// Variables
+$accent-color: #4a90e2;
+$text-color: #ffffff;
+$hover-color: lighten($accent-color, 20%);
+
+// Navbar styling
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  background: $accent-color;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 50px;
+      width: auto;
+      margin-right: 0.75rem;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+// /* Variables */
+// $bg-color: #1e3a5f; // Deep blue
+// $accent-color: #4a90e2; // Light blue
+// $text-color: #ffffff;
+
+// /* Global Styles */
+// html, body {
+//   height: 100%;
+//   margin: 0;
+//   display: flex;
+//   flex-direction: column;
+// }
+
+// /* App Component Container */
+// :host {
+//   display: flex;
+//   flex-direction: column;
+//   min-height: 100vh;
+// }
+
+// .header {
+//   background: $bg-color;
+//   padding: 1.5rem;
+
+//   app-header {
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//   }
+// }
+
+// .footer {
+//   margin-top: auto;
+// }
+
+// .main-content{
+//   margin: 0; 
+//   height: 62vh;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
+/* Variables */
+$bg-color: #1e3a5f; // Deep blue
+$accent-color: #4a90e2; // Light blue
+$text-color: #ffffff;
+
+/* Global Styles */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* App Component Container */
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background: $bg-color;
+  padding: 1.5rem;
+
+  app-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.footer {
+  margin-top: auto;
+}
+
+.main-content {
+  flex: 1; /* Allows main content to grow and fill space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Added padding for spacing */
+  box-sizing: border-box;
+}
