@@ -22,7 +22,7 @@ export class MainContentComponent {
   searchWeather = () => {
     if (this.city.trim()) {
       this.weatherService.getWeather(this.city).subscribe((results) => {
-        console.log(results);
+        this.city = '';
 
         this.weatherDetailsTemp = (results.main.temp - 273.15).toFixed(0);
         this.weatherDetailsName = results.name;
