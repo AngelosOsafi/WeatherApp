@@ -3,10 +3,13 @@
       <input type="text" placeholder="Search location" [(ngModel)]="city" (keydown.enter)="onEnterPress()">
       <button class="search-icon" (click)="searchWeather()">🔍</button>
     </div>
-    <div class="weather-info">
+    <div class="weather-info" *ngIf="weatherDetailsTemp">
       <div class="temperature">{{weatherDetailsTemp}}</div>
-      <!-- <div class="weather-icon">{{weatherDetailsIcon}}</div> -->
+      <div class="weather-icon">
+        <img [src]="weatherDetailsIcon"/>
+      </div>
       <div class="weather-description">{{weatherDetailsDescription}}</div>
       <div class="location">{{weatherDetailsName}} {{weatherDetailsCountry}}</div>
+      <div class="date-time">Last updated: {{ currentDateTime }}</div>
     </div>
   </div>
