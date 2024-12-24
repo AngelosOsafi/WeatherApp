@@ -4,7 +4,7 @@
       <button class="search-icon" (click)="searchWeather()">🔍</button>
     </div>
     <div class="weather-info" *ngIf="weatherDetailsTemp">
-      <div class="temperature">{{weatherDetailsTemp}}</div>
+      <div class="temperature">{{weatherDetailsTemp}}°C</div>
       <div class="weather-icon">
         <img [src]="weatherDetailsIcon"/>
       </div>
